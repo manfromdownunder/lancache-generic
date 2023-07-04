@@ -1,4 +1,4 @@
-FROM lancachenet/monolithic:latest
+FROM manfromdownunder/monolithic:latest
 LABEL version=3
 LABEL description="Single aggressive caching container for caching game content at LAN parties."
 LABEL maintainer="LanCache.Net Team <team@lancache.net>"
@@ -9,7 +9,7 @@ ENV GENERICCACHE_VERSION=2 \
     CACHE_DISK_SIZE=1000000m \
     CACHE_MAX_AGE=3560d \
 	CACHE_SLICE_SIZE=1m \
-    UPSTREAM_DNS="8.8.8.8 8.8.4.4" \
+    UPSTREAM_DNS="1.1.1.1" \
     BEAT_TIME=1h \
     LOGFILE_RETENTION=3560 \
     NGINX_WORKER_PROCESSES=16
